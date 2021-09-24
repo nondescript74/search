@@ -1,0 +1,70 @@
+* {
+  /* Reset browser's padding and margin */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .input[type="search"] {
+  width: 750px;
+  height: 44px
+  border: 1px solid #ccc;
+  border-radius: 44px;
+  font-size: 16px;
+  background-color: #dce0de;
+  background-image: url('search2.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.input[type="submit"] {
+  width: 300px;
+  height: 20px
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #dce0de;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+} */
+
+.topnav {
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: blue;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: inherit;
+}
