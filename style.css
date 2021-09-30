@@ -35,12 +35,12 @@ img {
 .dividerz1 {
   border-bottom: 1px solid #ebebeb;
 }
-/* .Mza7yc {
-max-width: 1140px;
-min-width: 200px;
-width: 96%;
-margin: 40px 2% 0 45px;
+
+.z01 {
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .otByu {
 width: 100%;
 clear: both;
@@ -118,7 +118,7 @@ min-height: 41px;
 vertical-align: middle;
 width: 50%;
 }
-.PLLUQc {
+/* .PLLUQc {
 padding-right: 16px;
 }
 
@@ -132,7 +132,7 @@ font-size: 13px;
 height: 25px;
 padding: 1px 8px;
 }
-
+*/
 .jfk-button-action {
 -webkit-box-shadow: none;
 -moz-box-shadow: none;
@@ -147,9 +147,7 @@ border: 1px solid #3079ed;
 color: #fff;
 }
 
-.jfk-button {
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
+.mybutton {
 border-radius: 2px;
 cursor: default;
 font-size: 11px;
@@ -163,12 +161,12 @@ min-width: 54px;
 outline: 0;
 padding: 0 8px;
 }
-
+/*
 .input.dUBGpe {
 padding: 0 12px;
-}
+} */
 
-.input {
+/* .input {
 -webkit-writing-mode: horizontal-tb !important;
 font-style: ;
 font-variant-ligatures: ;
