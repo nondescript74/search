@@ -6,12 +6,20 @@
 } */
 
 form {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  /* flex-direction: row; */
 }
 
 body {
   font-family: Roboto,arial,sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 292px;
+  height: 92px;
 }
 
 /* div {
@@ -197,6 +205,13 @@ input[type="text" i] {
   padding: 1px 2px;
 }
 
+input[type="search"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 input[type="submit"] {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
@@ -211,7 +226,7 @@ input[type="submit"] {
   min-width: 54px;
   text-align: center;
   cursor: pointer;
-  user-select: none;
+  /* user-select: none; */
 }
 
 input {
