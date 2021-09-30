@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <title>Search Field</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  </style>
 </head>
 <body>
   <div class="topnav">
@@ -14,14 +22,14 @@
     </div>
   </div>
   <div>
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Search image" class="center" width="292px" height="92">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Search image" width="292px" height="92">
   </div>
   <div>
     <form action="https://google.com/search" method="GET" role="search">
-      <div class="center">
-      <input type="search" placeholder="🔍">
-    </div>
-  </form>
-</div>
+      <input type="search" placeholder="🔍" class="center">
+      <!-- <input type="submit" value="Google Search">
+      <input type="submit" value="I'm Feeling Lucky"> -->
+    </form>
+  </div>
 </body>
 </html>
