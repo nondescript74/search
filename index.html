@@ -6,7 +6,11 @@
   <title>Z Search Field</title>
   <link rel="stylesheet" href="style.css">
   <style>
-
+  .zindex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   </style>
 </head>
 <body>
@@ -21,12 +25,13 @@
   </div>
   <div>
     <form action="https://google.com/search" >
-      <input type="search" name="q" placeholder="🔍">
-      <br>
-        <p class="z01">
+      <div>
+        <input type="search" name="q" placeholder="🔍">
+      </div>
+      <div class="zindex">
         <input type="submit" value="Google Search">
         <input type="submit" value="I'm Feeling Lucky">
-      </p>
+      </div>
     </form>
   </div>
 </body>
