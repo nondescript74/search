@@ -17,8 +17,15 @@
   <h3>Advanced Search</h3>
   <div class="dividerz1"></div>
   <div class="instr">
-    Find pages with...
-    <strong>To do this in the search box</strong>
+    <div class="instrL">
+      Find pages with...
+    </div>
+    <div class="instrC">
+      <p></p>
+    </div>
+    <div>
+      <strong>To do this in the search box</strong>
+    </div>
   </div>
   <div class="container">
     <div class="leftDiv">
@@ -28,11 +35,12 @@
       <div class="itemL">none of these words:</div>
     </div>
     <div class="centerDiv">
-      <form action="https;//google.com/search">
-        <input class="itemC" type="search" id="all" name="q"><br>
-        <input class="itemC" type="search" id="exact" name="q"><br>
-        <input class="itemC" type="searchxt" id="any" name="q"><br>
-        <input class="itemC" type="search" id="none" name="q"><br>
+      <form action="https://google.com/search" id="form" role="search">
+        <input class="itemC" type="search" id="allz" name="allz"><br>
+        <input class="itemC" type="search" id="exactz" name="exactz"><br>
+        <input class="itemC" type="search" id="anyz" name="anyz"><br>
+        <input class="itemC" type="search" id="nonez" name="nonez"><br>
+        <input class="advSrchButton" value="Advanced Search" type="submit" id="submit" name=submit>
       </form>
     </div>
     <div class="rightDiv">
@@ -42,5 +50,23 @@
       <div class="itemR">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</div>
     </div>
   </div>
+  <script>
+      const f = document.getElementById('form');
+      const qAll = document.getElementById('allz');
+      const qExact = document.getElementById('exactz');
+      const qAny = document.getElementById('anyz');
+      const qNone = document.getElementById('nonez');
+
+      const google = 'https://www.google.com/search?q=site%3A+';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + qAll.value + '%20' + qExact.value +'%20' + qAny.value +'%20' + qNone.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
 </body>
 </html>
