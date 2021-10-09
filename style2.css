@@ -40,7 +40,7 @@ h3 {
   border-bottom: 1px solid #ebebeb;
 }
 
-.instr {
+/* .instr {
   margin-top: 15px;
   margin-left: 50px;
   max-width: 800px;
@@ -64,9 +64,9 @@ h3 {
   width: 34%;
   display: flex;
   justify-content: center;
-}
+} */
 
-.container {
+/* .container {
   max-width: 800px;
   margin-top: inherit;
   margin-left: 50px;
@@ -98,19 +98,11 @@ h3 {
 
 .itemL, .itemR, .itemC {
   height: 30px;
-}
+} */
 
 .topnav-right {
   float: right;
 }
-
-/* .inst_right {
-padding: 10px 10px 0 10px;
-margin: 40px 40px 40px 40px;
-font-family: arial;
-font-size: 12px;
-font-weight: bold;
-} */
 
 .topnav {
   overflow: hidden;
@@ -129,4 +121,45 @@ font-weight: bold;
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  background: #e0f6ff;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.grid-item {
+  background-color: lightGray;
+  padding: 1px;
+}
+
+.grid-itemL {
+  text-align: left;
+}
+
+.grid-itemR {
+  text-align: left;
+}
+
+.grid-itemC {
+  text-align: center;
+}
+
+input[type="search"] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.smallText {
+  font-size: 10px;
+}
+
+.leftText {
+  font-size: 12px;
 }
