@@ -1,7 +1,14 @@
-img {
-  padding: 30px 0 0 30px;
-  width: 90px;
-  height: 32px;
+ 
+ .img2 {
+  /* padding: 30px 30px 30px 30px; */
+  width: 80%;
+  height: auto;
+  justify-content: flex-start;
+}
+
+.img3 {
+ padding: 5px 5px 5px 5px;
+ justify-content: flex-start;
 }
 
 h3 {
@@ -40,66 +47,6 @@ h3 {
   border-bottom: 1px solid #ebebeb;
 }
 
-/* .instr {
-  margin-top: 15px;
-  margin-left: 50px;
-  max-width: 800px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.instrL {
-  width: 33%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.instrR {
-  width: 33%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.instrC {
-  width: 34%;
-  display: flex;
-  justify-content: center;
-} */
-
-/* .container {
-  max-width: 800px;
-  margin-top: inherit;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 200px;
-  font-family: Roboto,arial,sans-serif;
-}
-
-.leftDiv {
-  justify-content: space-between;
-  font-size: 12px;
-  align-items: center;
-}
-
-.centerDiv {
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.rightDiv {
-  justify-content: space-between;
-  font-size: 10px;
-  align-items: center;
-}
-
-.itemL, .itemR, .itemC {
-  height: 30px;
-} */
-
 .topnav-right {
   float: right;
 }
@@ -123,18 +70,26 @@ h3 {
   color: black;
 }
 
+.grid-container-index {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  /* background: #e0f6ff; */
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 5px;
-  background: #e0f6ff;
   padding: 5px;
   justify-content: space-between;
 }
 
 .grid-item {
-  background-color: lightGray;
   padding: 1px;
 }
 
@@ -148,6 +103,13 @@ h3 {
 
 .grid-itemC {
   text-align: center;
+}
+
+.search2 {
+  width: 80%;
+  height: 50%;
+  padding: 15px 15px 15px 15px;
+  width: inherit;
 }
 
 input[type="search"] {

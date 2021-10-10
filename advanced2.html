@@ -8,11 +8,11 @@
 <body>
   <div class="topnav">
     <div class="topnav-right">
-      <a href="index.html">Home</a>
+      <a href="index2.html">Home</a>
     </div>
   </div>
-  <div>
-    <img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Image Search picture">
+  <div display="flex" class="img3">
+    <img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Image Search picture" width="120px" height=auto>
   </div>
   <h3>Advanced Search</h3>
   <div class="dividerz1"></div>
@@ -53,22 +53,22 @@
 
 
   function submitted(event) {
-    if(qAll.value == "") {
+    if(qAll.value === "") {
 
     } else {
       constructing = qAll.value+ '%20';
     }
-    if(qExact.value == "") {
+    if(qExact.value === "") {
 
     } else {
       constructing = constructing + qExact.value+ '%20';
     }
-    if(qAny.value == "") {
+    if(qAny.value === "") {
 
     } else {
       constructing = constructing + qAny.value+ '%20';
     }
-    if(qNone.value == "") {
+    if(qNone.value === "") {
 
     } else {
       constructing = constructing + qNone.value;
