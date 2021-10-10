@@ -1,14 +1,10 @@
- 
- .img2 {
-  /* padding: 30px 30px 30px 30px; */
-  width: 80%;
-  height: auto;
-  justify-content: flex-start;
-}
 
-.img3 {
- padding: 5px 5px 5px 5px;
- justify-content: flex-start;
+input[type="search"] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 40px;
+  margin: 5px 5px 5px 5px;
 }
 
 h3 {
@@ -18,6 +14,28 @@ h3 {
   font-size: 20px;
   font-style: normal;
   color: #ff007f;
+}
+
+.img2 {
+  /* padding: 30px 30px 30px 30px; */
+  padding: 5px 5px 5px 5px;
+  justify-content: center;
+  align-items: center;
+  width: 544px;
+  height: 184px;
+}
+
+.img3 {
+  padding: 5px 5px 5px 5px;
+  justify-content: flex-start;
+}
+
+.img4 {
+  /* padding: 30px 30px 30px 30px; */
+  padding: 5px 5px 5px 5px;
+  justify-content: flex-end;
+  width: 272px;
+  height: 92px;
 }
 
 .advDiv {
@@ -70,6 +88,16 @@ h3 {
   color: black;
 }
 
+.grid-container-openg_page {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background: #e0f6ff;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .grid-container-index {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -89,8 +117,22 @@ h3 {
   justify-content: space-between;
 }
 
+.grid-container-images {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  /* background: #e0f6ff; */
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid-item {
+  height: 40px;
   padding: 1px;
+  margin: 5px 5px 5px 5px;
+  align-items: center;
 }
 
 .grid-itemL {
@@ -103,19 +145,6 @@ h3 {
 
 .grid-itemC {
   text-align: center;
-}
-
-.search2 {
-  width: 80%;
-  height: 50%;
-  padding: 15px 15px 15px 15px;
-  width: inherit;
-}
-
-input[type="search"] {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
 }
 
 .smallText {
