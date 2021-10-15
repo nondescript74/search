@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <title>Zoogle Search Field</title>
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
   <div class="topnav">
+    <div class="topnav-left">
+      <a href="opening_page.html">About</a>
+    </div>
     <div class="topnav-right">
       <a href="images.html">Images</a>
       <a href="advanced2.html">Advanced</a>
     </div>
   </div>
+
   <div class="grid-container-index">
-    <div display=flex class="img2">
+    <div class="grid-item">
       <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Search image">
     </div>
-    <form action="https://google.com/search" >
-      <div class="grid-item grid-itemC">
-        <input type="search" name="q" placeholder="🔍">
-      </div>
-      <div class="grid-item grid-itemC">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
-      </div>
-    </form>
+    <div class="grid-item">
+      <form action="https://google.com/search" >
+        <div class="grid-itemC">
+          <input type="search" name="q" placeholder=" 🔍 ">
+        </div>
+        <div class="grid-itemC">
+          <input type="submit" value="Google Search">
+          <input type="submit" value="I'm Feeling Lucky">
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
