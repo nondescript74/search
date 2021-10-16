@@ -35,3 +35,13 @@ input {
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
 }
+
+input[type="search"] {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 80%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
