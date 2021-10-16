@@ -1,19 +1,37 @@
-.container {
-  display: flex;
-}
 
 .topnav {
-  display: block;
-  overflow: hidden;
-  font-family: "Roboto",arial,sans-serif;
+  font-family: Roboto,arial,sans-serif;
 }
 
 .topnav-right {
   float: right;
-  justify-content: space-between;
+  text-align: right;
 }
 
 .topnav-left {
   float: left;
   justify-content: space-between;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
 }
