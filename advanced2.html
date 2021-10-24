@@ -7,11 +7,15 @@
 </head>
 <body>
   <div class="topnav">
+    <div class="topnav-left">
+      <a href="opening_page.html">About</a>
+    </div>
     <div class="topnav-right">
-      <a href="index4.html">Home</a>
+      <a href="images.html">Images</a>
+      <a href="advanced2.html">Advanced</a>
     </div>
   </div>
-  <div display="flex" class="img3">
+  <div display="flex">
     <img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Image Search picture" width="120px" height=auto>
   </div>
   <h3>Advanced Search</h3>
@@ -22,16 +26,16 @@
       <div class="grid-item grid-itemC"></div>
       <div class="grid-item grid-itemR"><strong>To do this in the search box</strong></div>
       <div class="grid-item grid-itemL leftText">all these words:</div>
-      <div class="grid-item grid-itemC"><input type="search" id="allz" name="allz"></div>
+      <div class="grid-item grid-itemC"><input type="text" id="allz" name="allz"></div>
       <div class="grid-item grid-itemR smallText">Type the important words: tricolor rat terrier</div>
       <div class="grid-item grid-itemL leftText">this exact word or phrase:</div>
-      <div class="grid-item grid-itemC"><input type="search" id="exactz" name="exactz"></div>
+      <div class="grid-item grid-itemC"><input type="text" id="exactz" name="exactz"></div>
       <div class="grid-item grid-itemR smallText">Put exact words in quotes:  "rat terrier"</div>
       <div class="grid-item grid-itemL leftText">any of these words:</div>
-      <div class="grid-item grid-itemC"><input type="search" id="anyz" name="anyz"></div>
+      <div class="grid-item grid-itemC"><input type="text" id="anyz" name="anyz"></div>
       <div class="grid-item grid-itemR smallText">Type OR between all the words you want:  miniature OR standard</div>
       <div class="grid-item grid-itemL leftText">none of these words:</div>
-      <div class="grid-item grid-itemC"><input type="search" id="nonez" name="nonez"></div>
+      <div class="grid-item grid-itemC"><input type="text" id="nonez" name="nonez"></div>
       <div class="grid-item grid-itemR smallText">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</div>
     </div>
     <div class="grid-container">
@@ -56,23 +60,35 @@
     if(qAll.value === "") {
 
     } else {
-      constructing = qAll.value + '%20';
+      constructing = qAll.value + '+';
+      qAll.value = ""
     }
+
     if(qExact.value === "") {
 
     } else {
-      constructing = constructing + qExact.value + '%20';
+      constructing = constructing + qExact.value + '+';
+      qExact.value = ""
     }
+
     if(qAny.value === "") {
 
     } else {
-      constructing = constructing + qAny.value + '%20';
+      constructing = constructing + qAny.value + '+';
+      qAny.value = ""
     }
     if(qNone.value === "") {
 
     } else {
       constructing = constructing + qNone.value;
+      qNone.value = ""
     }
+
+    if(constructing =='') {
+      return;
+    }
+
+
     console.log("constructing: ", {constructing});
     event.preventDefault();
     const url = google + constructing;
