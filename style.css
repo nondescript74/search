@@ -1,13 +1,3 @@
-/*
-body {
-  margin: 20px;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-} */
 
 .topnav {
   overflow: hidden;
@@ -34,64 +24,39 @@ body {
   background-color: #ddf;
   color: black;
 }
-/*
-.image-container {
-  width: 50%;
-  border: 1px solid black;
-  padding: 10px;
+.container {
+  border: solid 2px #806868;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.item {
+  border: 2px solid #457081;
   margin: 10px;
+  flex-basis: auto;
+  flex-direction: row;
+}
+.noborder {
+  border: none;
+}
+p {
+  /* display: flex; */
+  justify-content: center;
 }
 
-.input-container {
-  width: 60%;
-  border: 1px solid green;
-  padding: 10px;
-  margin: 10px
-}
- */
-
-/* .container {
-  display: grid;
-  background-color: #e0f6ff;
-  border: 5px dashed #1e96ff;
-  grid-gap: 5px;
-  grid-template-areas:
-    "header header header header header header"
-    "sidebar main main main"
-    "sidebar photo photo button"
-    "footer footer footer footer footer footer";
+input {
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
 }
 
-.header {
-  grid-area: item1;
+input[type="search"] {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 80%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
 }
-
-.sidebar {
-  grid-area: itemsidebar;
-}
-
-.main {
-  grid-area: itemmain;
-}
-
-.footer {
-  grid-area: item5;
-}
-
-.photo {
-  grid-area: item6;
-}
-
-#buy-button {
-  grid-area: button;
-  color: white;
-  background-color: #708090;
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 20px;
-  margin: 1px;
-}
-
-.item-7 {
-  grid-area: item7;
-} */
