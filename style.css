@@ -1,256 +1,97 @@
-* {
-  /* Reset browser's padding and margin */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*
+body {
+  margin: 20px;
 }
 
-.form {
-  display: flex;
-  flex-direction: row;
-}
-
-.body {
-    font-family: Roboto,arial,sans-serif;
-}
-
-.div {
-    display: block;
-}
-
-.appbar {
-    color: #d93025;
-    font-size: 20px;
-    margin: 25px 35px;
-}
-
-.dividerz1 {
-    border-bottom: 1px solid #ebebeb;
-}
-.Mza7yc {
-    max-width: 1140px;
-    min-width: 200px;
-    width: 96%;
-    margin: 40px 2% 0 45px;
-}
-.otByu {
-    width: 100%;
-    clear: both;
-}
-.otByu .yIQOUb {
-    clear: both;
-}
-.otByu .I1Kbt, .lFApYd {
-    float: left;
-    display: inline-block;
-    min-width: 167px;
-    width: 16%;
-    font-size: 16px;
-    min-height: 42px;
-    font-weight: 500;
-    color: #333;
-    vertical-align: middle;
-}
-.otByu .HoCfzc {
-    float: left;
-    display: inline-block;
-    min-width: 167px;
-    min-height: 41px;
-    vertical-align: middle;
-    width: 50%;
-}
-.otByu .orcpGe {
-    float: left;
-    display: inline-block;
-    width: 33%;
-    font-size: 13px;
-    font-weight: 700;
-    color: #777;
-    padding-left: 5px;
-    vertical-align: middle;
-}
-.lOTAE {
-    height: 30px;
-    display: table-cell;
-    vertical-align: middle;
-}
-.otByu .FAcADc {
-    float: left;
-    display: inline-block;
-    min-width: 167px;
-    width: 16%;
-    height: 42px;
-    color: #222;
-    font-size: 13px;
-    line-height: 16px;
-    vertical-align: middle;
-}
-.Qy8Xkb {
-    margin: 18px 0;
-    clear: both;
-    border-top: 1px solid #ebebeb;
-}
-.otByu .cwqNnb {
-    float: left;
-    display: inline-block;
-    width: 32%;
-    min-width: 160px;
-    margin: 0 0 8px 1%;
-    color: #555;
-    font-size: 11px;
-    padding-left: 5px;
-    vertical-align: middle;
-    position: relative;
-}
-.otByu .jYcx0e {
-    float: left;
-    display: inline-block;
-    min-width: 167px;
-    min-height: 41px;
-    vertical-align: middle;
-    width: 50%;
-}
-.PLLUQc {
-    padding-right: 16px;
-}
-
-.jfk-textinput {
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
-    border: 1px solid #d9d9d9;
-    border-top: 1px solid #c0c0c0;
-    font-size: 13px;
-    height: 25px;
-    padding: 1px 8px;
-}
-
-.jfk-button-action {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    background-color: #4d90fe;
-    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
-    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
-    background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
-    background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
-    background-image: linear-gradient(top,#4d90fe,#4787ed);
-    border: 1px solid #3079ed;
-    color: #fff;
-}
-
-.jfk-button {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    cursor: default;
-    font-size: 11px;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-    margin-right: 16px;
-    height: 27px;
-    line-height: 27px;
-    min-width: 54px;
-    outline: 0;
-    padding: 0 8px;
-}
-
-.input.dUBGpe {
-    padding: 0 12px;
-}
-
-.input {
-    -webkit-writing-mode: horizontal-tb !important;
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: ;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-
-.input[type="text" i] {
-    padding: 1px 2px;
-}
-
-.input[type="submit"] {
-  min-width: 120px;
-  height: 30px
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  font-size: 13px;
-  background-repeat: no-repeat;
-  padding: 1px 8px;
-}
-
-.input[type="search"] {
-  min-width: 240px;
-  height: 44px
-  border: 1px solid #ccc;
-  border-radius: 44px;
-  font-size: 16px;
-  background-image: url('search2.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+} */
 
 .topnav {
   overflow: hidden;
-  font-family: Roboto,arial,sans-serif;
+  background-color: white;
 }
-/* Style the links inside the navigation bar */
+
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
+  float:right;
+}
+
 .topnav a {
   float: left;
+  display: block;
+  color: black;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 18px 16px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #ddf;
   color: black;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: blue;
+/*
+.image-container {
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+.input-container {
+  width: 60%;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 10px
+}
+ */
+
+/* .container {
+  display: grid;
+  background-color: #e0f6ff;
+  border: 5px dashed #1e96ff;
+  grid-gap: 5px;
+  grid-template-areas:
+    "header header header header header header"
+    "sidebar main main main"
+    "sidebar photo photo button"
+    "footer footer footer footer footer footer";
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: inherit;
+.header {
+  grid-area: item1;
 }
+
+.sidebar {
+  grid-area: itemsidebar;
+}
+
+.main {
+  grid-area: itemmain;
+}
+
+.footer {
+  grid-area: item5;
+}
+
+.photo {
+  grid-area: item6;
+}
+
+#buy-button {
+  grid-area: button;
+  color: white;
+  background-color: #708090;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 1px;
+}
+
+.item-7 {
+  grid-area: item7;
+} */
