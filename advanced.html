@@ -3,7 +3,7 @@
 <head>
   <title>Zoogle Advanced Search</title>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styleAdv.css" />
 </head>
 <body>
   <div class="topnav">
@@ -12,11 +12,125 @@
     </div>
     <div class="topnav-right">
       <a href="index.html">Home</a>
-      <a href="images.html">Images</a>
     </div>
   </div>
-  <div class="img_advanced">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Search image">
+  <div class="adv_container">
+    <div class="img_advanced">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Search image" >
+    </div>
+    <div class="">
+      <h3>Advanced Search</h3>
+    </div>
+    <div class="dividerz1"></div>
   </div>
+  <form action="https://google.com/search" id="form" role="search">
+    <div class="grid-container-advanced2">
+      <div class="grid-item grid-itemL">Find pages with...</div>
+      <div class="grid-item grid-itemC"></div>
+      <div class="grid-item grid-itemR"><strong>To do this in the search box</strong></div>
+      <div class="grid-item grid-itemL leftText">all these words:</div>
+      <div class="grid-item grid-itemC"><input type="text" id="allz" name="allz"></div>
+      <div class="grid-item grid-itemR smallText">Type the important words:
+        <div class="fontCourier">
+          tricolor rat terrier
+        </div>
+      </div>
+      <div class="grid-item grid-itemL leftText">this exact word or phrase:</div>
+      <div class="grid-item grid-itemC"><input type="text" id="exactz" name="exactz"></div>
+      <div class="grid-item grid-itemR smallText">Put exact words in quotes:
+        <div class="fontCourier">
+          "rat terrier"
+        </div>
+      </div>
+      <div class="grid-item grid-itemL leftText">any of these words:</div>
+      <div class="grid-item grid-itemC"><input type="text" id="anyz" name="anyz"></div>
+      <div class="grid-item grid-itemR smallText">Type OR between all the words you want:
+        <div class="fontCourier">
+          miniature OR standard
+        </div>
+      </div>
+      <div class="grid-item grid-itemL leftText">none of these words:</div>
+      <div class="grid-item grid-itemC"><input type="text" id="nonez" name="nonez"></div>
+      <div class="grid-item grid-itemR smallText">Put a minus sign just before words you don't want:
+        <div class="fontCourier">
+          -rodent, -"Jack Russell"
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item grid-itemL"></div>
+      <div class="grid-item grid-itemC"><input class="advSrchButton" value="Advanced Search" type="submit" id="submit" name=submit></div>
+    </div>
+  </form>
+  <script>
+  const f = document.getElementById('form');
+  const qAll = document.getElementById('allz');
+  const qExact = document.getElementById('exactz');
+  const qAny = document.getElementById('anyz');
+  const qNone = document.getElementById('nonez');
+
+  const google = 'https://www.google.com/search?q=';
+
+  var constructing = '';
+  console.log("constructing at start: ", {constructing});
+
+  function submitted(event) {
+    if(qAll.value == '') {
+
+    } else {
+      constructing = qAll.value;
+      console.log("constructing at qAll: ", {constructing});
+      qAll.value = '';
+      qExact.value = '';
+      qAny.value = '';
+    }
+
+    if(qExact.value == '') {
+
+    } else {
+      constructing = constructing + qExact.value;
+      console.log("constructing at qExact: ", {constructing});
+      qExact.value = '';
+      qAll.value = '';
+      qAny.value = '';
+    }
+
+    if(qAny.value == '') {
+
+    } else {
+      constructing = constructing + qAny.value;
+      console.log("constructing at qAny: ", {constructing});
+      qAny.value = '';
+      qAll.value = '';
+      qExact.value = '';
+    }
+
+    if(qNone.value == '') {
+
+    } else {
+      console.log("constructing before qNone: ", {constructing});
+      constructing = constructing + ' -' + qNone.value;
+      console.log("constructing at qNone end: ", {constructing});
+
+      qNone.value = '';
+      qAny.value = '';
+      qAll.value = '';
+      qExact.value = '';
+    }
+
+    if(constructing == '') {
+      return;
+    }
+
+
+    console.log("constructing at end: ", {constructing});
+    event.preventDefault();
+    const url = google + constructing;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+
+  f.addEventListener('submit', submitted);
+  </script>
 </body>
 </html>

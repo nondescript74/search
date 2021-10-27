@@ -19,33 +19,31 @@
       <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Search image">
     </div>
     <form id="form" action="https://google.com/search" >
-      <p><input type="search" name="q" id="qAll" placeholder=" 🔍 "></p>
+      <p><input type="search" name="q" id="qAll" placeholder=" 🔍 " width="300px"></p>
       <p>
         <input type="submit" value="Google Search" id="submit">
         <input type="submit" value="I'm Feeling Lucky" id="submitLucky">
       </p>
-    </div>
-  </form>
+    </form>
+  </div>
   <script>
   const f = document.getElementById('form');
   const qAll = document.getElementById('qAll');
   const google = 'https://www.google.com/search?q=';
   var constructing = '';
 
-  // console.log("constructing: ", {constructing});
   function submitted(event) {
     if(qAll.value === "") {
-      console.log("qAll is empty string";
+      console.log("qAll is empty string");
       return
 
     } else {
       constructing = qAll.value;
     }
-    
+
     if(constructing == '') {
       return;
     }
-
 
     console.log("constructing: ", {constructing});
     event.preventDefault();

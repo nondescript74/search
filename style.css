@@ -32,22 +32,19 @@
   justify-content: center;
 }
 .item {
-  border: 2px solid #457081;
-  margin: 10px;
+  /* border: 2px solid #457081; */
+  margin: 5px;
   flex-basis: auto;
   flex-direction: row;
 }
-.noborder {
-  border: none;
-}
+
 p {
   /* display: flex; */
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 input {
-  width: 300px;
-  padding: 10px 10px 10px 10px;
+  padding: 4px 4px 4px 4px;
   margin: 10px 10px 10px 10px;
 }
 

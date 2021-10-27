@@ -1,0 +1,132 @@
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
+  float:right;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px 16px;
+}
+
+.img_advanced {
+  width: "120px";
+}
+
+.adv_container {
+  /* border: solid 2px #806868; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20Px;
+  margin-right: 40px;
+}
+
+input[type="search"] {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 80%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 5px 5px 5px;
+}
+
+h3 {
+  font-family: arial;
+  font-size: 20px;
+  font-style: normal;
+  color: #ff007f;
+}
+
+.advDiv {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+
+.dividerz1 {
+  border-bottom: 2px solid #ebebeb;
+}
+
+.fontCourier {
+  font-family: "Courier", sans-serif;
+}
+
+.advSrchButton {
+  border: 1px solid #3079ed;
+  color: #fff;
+  background-color: skyBlue;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  height: 27px;
+  line-height: 27px;
+  min-width: 54px;
+  outline: 0;
+  padding: 0 8px;
+}
+.grid-container-advanced2, .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
+  justify-content: space-between;
+  margin-left: 40px;
+  width: 90%;
+  /* background: #e0f6ff; */
+}
+.grid-item {
+  height: 40px;
+  padding: 5px 5px 5px 5px;
+  margin: 8px 5px 8px 5px;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.grid-itemL {
+  text-align: left;
+}
+
+.grid-itemR {
+  text-align: left;
+}
+
+.grid-itemC {
+  text-align: center;
+}
+
+.smallText {
+  font-size: 10px;
+}
+
+.leftText {
+  font-size: 12px;
+}
