@@ -82,7 +82,7 @@
       console.log("constructing at qAll: ", {constructing});
       qAll.value = '';
       qExact.value = '';
-      qAny.value = '';
+      // qAny.value = '';
     }
 
     if(qExact.value == '') {
@@ -92,12 +92,13 @@
       console.log("constructing at qExact: ", {constructing});
       qExact.value = '';
       qAll.value = '';
-      qAny.value = '';
+      // qAny.value = '';
     }
 
     if(qAny.value == '') {
 
     } else {
+
       constructing = constructing + qAny.value;
       console.log("constructing at qAny: ", {constructing});
       qAny.value = '';
