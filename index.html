@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <title>Zoogle Search</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
 </head>
 <body>
   <div class="topnav">
@@ -18,42 +19,17 @@
     <div class="item">
       <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Search image">
     </div>
-    <form id="form" action="https://google.com/search" >
-      <p><input type="search" name="q" id="qAll" placeholder=" 🔍 " width="300px"></p>
-      <p>
-        <input type="submit" value="Google Search" id="submit">
-        <input type="submit" value="I'm Feeling Lucky" id="submitLucky">
-      </p>
-    </form>
+    <div class="item">
+      <form id="searchForm">
+        <p>
+          <input type="search" name="q" id="searchField" placeholder="🔍 " width="300px">
+        </p>
+        <p>
+          <input type="submit" value="Google Search" id="googleSearch">
+          <input type="submit" value="I Feel Lucky" id="luckySearch">
+        </p>
+      </form>
+    </div>
   </div>
-  <script>
-  const f = document.getElementById('form');
-  const qAll = document.getElementById('qAll');
-  const google = 'https://www.google.com/search?q=';
-  var constructing = '';
-
-  function submitted(event) {
-    if(qAll.value === "") {
-      console.log("qAll is empty string");
-      return
-
-    } else {
-      constructing = qAll.value;
-    }
-
-    if(constructing == '') {
-      return;
-    }
-
-    console.log("constructing: ", {constructing});
-    event.preventDefault();
-    const url = google + constructing;
-    const win = window.open(url, '_blank');
-    win.focus();
-  }
-
-  f.addEventListener('submit', submitted);
-  f.addEventListener('submitLucky', submitted);
-  </script>
-  </body>
-  </html>
+</body>
+</html>

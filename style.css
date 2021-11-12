@@ -43,7 +43,7 @@ input {
   margin: 10px 10px 10px 10px;
 }
 
-input[type="search"] {
+input[type="search"], input[type="text"] {
   margin-left: 20px;
   margin-right: 20px;
   width: 80%;
