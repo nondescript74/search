@@ -19,38 +19,14 @@
     <div class="item">
       <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Image Search picture">
     </div>
-    <form id="form">
-      <p>
-        <input type="search" name="q" id="imageSearch" placeholder=" 🔍 Image Search ... "></p>
-    </form>
+    <div>
+      <form id="form">
+        <p>
+          <input type="search" name="q" id="googleSearchImg" placeholder=" 🔍 Image Search ... ">
+          <button type="button" name="button" id="button"> 🔍 </button>
+        </p>
+      </form>
+    </div>
   </div>
-  <!-- <script>
-  const f = document.getElementById('form');
-  const qImages = document.getElementById('qImages');
-  const google = 'https://www.google.com/images?q=';
-  var constructing = '';
-
-  function submitted(event) {
-    if(qImages.value === "") {
-      console.log("qImages is empty string");
-      return
-
-    } else {
-      constructing = qImages.value;
-    }
-
-    if(constructing == '') {
-      return;
-    }
-
-    console.log("constructing: ", {constructing});
-    event.preventDefault();
-    const url = google + constructing;
-    const win = window.open(url, '_blank');
-    win.focus();
-  }
-
-  f.addEventListener('qImages', submitted);
-  </script> -->
 </body>
 </html>

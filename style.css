@@ -52,3 +52,9 @@ input[type="search"], input[type="text"] {
   border-radius: 20px;
   padding: 5px 5px 5px 5px;
 }
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
